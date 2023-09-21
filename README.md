@@ -1,1 +1,0 @@
-# FEDC5_DeCoAlGo
