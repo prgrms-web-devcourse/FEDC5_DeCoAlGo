@@ -2,7 +2,7 @@
 
 function solution(numbers, hand) {
   let answer = '';
-  // 2, 5, 8, 0의 각 숫자 간 거리
+  // 2, 5, 8, 0, 특수문자의 각 숫자 간 거리
   const numberDistance = {
     2: [3, 1, 0, 1, 2, 1, 2, 3, 2, 3],
     5: [2, 2, 1, 2, 1, 0, 1, 2, 1, 2],
