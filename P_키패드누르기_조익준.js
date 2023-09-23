@@ -1,3 +1,5 @@
+// 문제 링크 : https://school.programmers.co.kr/learn/courses/30/lessons/67256?language=javascript
+
 function solution(numbers, hand) {
   let answer = '';
   // 2, 5, 8, 0의 각 숫자 간 거리
