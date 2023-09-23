@@ -1,3 +1,5 @@
+// 문제 링크 : https://www.acmicpc.net/problem/2607
+
 // 입력
 let [n, ...input] = require('fs')
   .readFileSync('/dev/stdin')
