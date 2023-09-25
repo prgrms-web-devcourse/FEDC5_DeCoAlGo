@@ -1,11 +1,12 @@
 let fs = require("fs");
-let input = fs.readFileSync("example.txt").toString().split("\n");
+// let input = fs.readFileSync("example.txt").toString().split("\n");
+let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 
 //아이디어
 //조건에 따라서 문자열, 태그 별로 구분한다.
 //일단 문자열이 나오면 뒤집어 준다. 근데 태그 안에 있는 애는 보호처리
 //시작!!
-
+//틀린 점 -> 단어를 구분하지 않고 통째로 뒤집어 버렸다
 let answer = "";
 let str = input[0];
 //<>태그를 포함하는 경우
@@ -32,7 +33,13 @@ if (str.includes("<") || str.includes(">")) {
         answer += temp.join("");
         temp = [];
       }
-      temp2.push(str2[i]);
+      if (str2[i] == " ") {
+        answer += temp2.reverse().join("");
+        temp2 = [];
+        answer += " ";
+      } else {
+        temp2.push(str2[i]);
+      }
       if (i == str2.length - 1) {
         answer += temp2.reverse().join("");
       }
