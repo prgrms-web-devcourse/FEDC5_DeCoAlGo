@@ -1,1 +1,11 @@
-<open>tag<close>
+10
+ABAAC
+ABAA
+ABAC
+ABAB
+ABAAA
+ABCAA
+ABSAC
+AABBB
+AA
+ABC
