@@ -20,24 +20,45 @@ li {
   font-size: 25px;
   background-color: antiquewhite;
 }
-.playground > ul {
+.gamezone {
+  display: flex;
+}
+.playground {
+  width: 70%;
+}
+.playground > ul,
+.miniground > ul {
   border: 1px solid black;
   box-sizing: border-box;
   width: 250px;
   margin: 0 auto; /*테트리스보드 중앙정렬 */
 }
-.playground > ul > li {
+.miniground > ul {
+  width: 125px;
+}
+.playground > ul > li,
+.miniground > ul > li {
   width: 100%;
   height: 25px;
 }
-.playground > ul > li > ul {
+.playground > ul > li > ul,
+.miniground > ul > li > ul {
   display: flex;
 }
-.playground > ul > li > ul > li {
+.playground > ul > li > ul > li,
+.miniground > ul > li > ul > li {
   /* 각 한칸 */
   width: 25px;
   height: 25px;
   background-color: rgb(251, 251, 251);
   border: 0.5px solid rgb(92, 92, 92);
   box-sizing: border-box;
+}
+.miniground {
+  width: 30%;
+}
+
+/* 디자인시스템 */
+.textCenter {
+  text-align: center;
 }
