@@ -9,7 +9,7 @@ ul {
 
 body {
   height: 100%;
-  overflow: hidden;
+  overflow: hidden; /* 넘어가는 컨텐츠는 숨겨버린다  */
 }
 
 .score {
@@ -37,4 +37,5 @@ body {
   width: 25px;
   height: 25px;
   outline: 1px solid #ccc;
+  /* border는 옵션의 두께만큼 박스의 전체 크기도 늘어나게 하는 반면 outline은 박스의 크기를 늘리는 게 아니라 단지 테두리만 생기는 것 */
 }
