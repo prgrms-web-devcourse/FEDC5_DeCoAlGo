@@ -12,28 +12,28 @@ body {
   overflow: hidden; /* 넘어가는 컨텐츠는 숨겨버린다  */
 }
 
-.score {
+#score {
   text-align: center;
   font-size: 36px;
   margin-bottom: 2rem;
 }
 
-.playground ul {
+#board > ul {
   border: 1px solid #333;
   width: 250px;
   margin: 0 auto;
 }
 
-.playground ul li {
+#board > ul > li {
   width: 100%;
   height: 25px;
 }
 
-.playground ul li ul {
+#board > ul > li > ul {
   display: flex;
 }
 
-.playground ul li ul li {
+#board > ul > li > ul > li {
   width: 25px;
   height: 25px;
   outline: 1px solid #ccc;
